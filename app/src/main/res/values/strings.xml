@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FarmaciasAhorro</string>
+    <string name="N_paciente">Nombre de paciente</string>
+    <string name="E_paciente">Estado de paciente</string>
+    <string name="C_paciente">Correo</string>
+    <string name="T_Paciente">Telefono</string>
+    <string name="Direccion">Direccion</string>
+    <string name="Padecimiento">Padecimiento</string>
+    <string name="Fecha_cita">Fecha de cita</string>
+    <string name="Hora_Cita">Hora de la cita</string>
+    <string name="Elegir_Doctor">Doctor</string>
+
+    <string-array name="Drs">
+      <item>"Dr. Nacho"</item>
+        <item>"Dr. Gerson"</item>
+        <item>"Dr. Yuri"</item>
+        <item>"Dr. Jorge"</item>
+        <item>"Dr.  Miguel"</item>
+        <item>"Dr. Pedro El Momo"</item>
+        <item>"Dr. Lion"</item>
+        <item>"Dr. Gaara"</item>
+        <item>"Dr. Naruto"</item>
+
+    </string-array>
+
+</resources>
