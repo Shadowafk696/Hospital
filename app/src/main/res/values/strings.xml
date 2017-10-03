@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">FarmaciasAhorro</string>
-    <string name="N_paciente">Nombre de paciente</string>
-    <string name="E_paciente">Estado de paciente</string>
-    <string name="C_paciente">Correo</string>
-    <string name="T_Paciente">Telefono</string>
-    <string name="Direccion">Direccion</string>
-    <string name="Padecimiento">Padecimiento</string>
-    <string name="Fecha_cita">Fecha de cita</string>
-    <string name="Hora_Cita">Hora de la cita</string>
-    <string name="Elegir_Doctor">Doctor</string>
+    <string name="Name_P">Nombre de paciente</string>
+    <string name="Status">Estado de paciente</string>
+    <string name="Email">Correo</string>
+    <string name="Telephone">Telefono</string>
+    <string name="Dir">Direccion</string>
+    <string name="Pad">Padecimiento</string>
+    <string name="Date">Fecha de cita</string>
+    <string name="Date_time">Hora de la cita</string>
+    <string name="Doc">Elegir doctor</string>
 
     <string-array name="Drs">
       <item>"Dr. Nacho"</item>

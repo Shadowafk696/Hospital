@@ -8,147 +8,191 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_dark">
+
         <LinearLayout
             android:id="@+id/Nombre"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1">
 
             <TextView
-                android:text="@string/N_paciente"
+                android:id="@+id/NPaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/NPaciente" />
+                android:text="@string/Name_P"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE1"
-                android:hint="nombre del paciente"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_1"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/NPaciente"/>
+                android:layout_toRightOf="@+id/Name_Paciente"
+                android:fontFamily="monospace"
+                android:hint="Ingrese su nombre"
+                android:inputType="textAutoComplete|textPersonName" />
+
             <TextView
-                android:text="@string/E_paciente"
+                android:id="@+id/EPaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/EPaciente" />
+                android:text="@string/Status"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE2"
-                android:hint="edad del paciente"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_2"
                 android:layout_width="match_parent"
-                android:inputType="number"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/EPaciente"/>
+                android:layout_toRightOf="@+id/EPaciente"
+                android:fontFamily="monospace"
+                android:hint="Ingrese su edad"
+                android:inputType="number" />
+
             <TextView
-                android:text="@string/C_paciente"
+                android:id="@+id/CPaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/CPaciente" />
+                android:text="@string/Email"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE3"
-                android:hint="correo del paciente"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_3"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/CPaciente"/>
+                android:layout_toRightOf="@+id/CPaciente"
+                android:fontFamily="monospace"
+                android:hint="Ingrese su correo"
+                android:inputType="textEmailAddress" />
+
             <TextView
-                android:text="@string/T_Paciente"
+                android:id="@+id/TPaciente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/TPaciente" />
+                android:text="@string/Telephone"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE4"
-                android:hint="telefono del paciente"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_4"
                 android:layout_width="match_parent"
-                android:inputType="number"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/TPaciente"/>
+                android:layout_toRightOf="@+id/TPaciente"
+                android:fontFamily="monospace"
+                android:hint="Ingrese telefono del paciente"
+                android:inputType="number" />
+
             <TextView
-                android:text="@string/Direccion"
+                android:id="@+id/direccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/direccion" />
+                android:text="@string/Dir"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE5"
-                android:hint="direccion de residencia"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_5"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/direccion"/>
+                android:layout_toRightOf="@+id/direccion"
+                android:fontFamily="monospace"
+                android:hint="Ingrese su direccion"
+                android:inputType="text" />
+
             <ImageButton
                 android:id="@+id/Fotopaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
                 app:srcCompat="@android:drawable/ic_menu_camera" />
+
             <TextView
                 android:id="@+id/targeturi"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:visibility="invisible"
-                />
+                android:visibility="invisible" />
+
             <ImageView
                 android:id="@+id/Ohnolafoto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
             <TextView
-                android:text="@string/Padecimiento"
+                android:id="@+id/padecimiento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/padecimiento" />
+                android:text="@string/Pad"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE6"
-                android:hint="que sintomas presenta"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_6"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/padecimiento"/>
+                android:layout_toRightOf="@+id/padecimiento"
+                android:fontFamily="monospace"
+                android:hint="Ingrese sus sintomas"
+                android:inputType="text" />
+
             <TextView
-                android:text="@string/Fecha_cita"
+                android:id="@+id/FCita"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/FCita" />
+                android:text="@string/Date"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE7"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_7"
                 android:layout_width="match_parent"
-                android:inputType="date"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/FCita"/>
+                android:layout_toRightOf="@+id/FCita"
+                android:fontFamily="monospace"
+                android:hint="Fecha de cita"
+                android:inputType="date" />
+
             <TextView
-                android:text="@string/Hora_Cita"
+                android:id="@+id/HCita"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/HCita" />
+                android:text="@string/Date_time"
+                android:textColor="@android:color/holo_blue_dark" />
+
             <EditText
-                android:id="@+id/TE8"
-                android:layout_height="wrap_content"
+                android:id="@+id/Celda_8"
                 android:layout_width="match_parent"
-                android:inputType="time"
+                android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_toRightOf="@+id/HCita"/>
+                android:layout_toRightOf="@+id/Hora_Cita"
+                android:fontFamily="monospace"
+                android:hint="Hora de cita"
+                android:inputType="time" />
+
             <TextView
-                android:text="@string/Elegir_Doctor"
+                android:id="@+id/Choose_D"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:id="@+id/Edoctor" />
+                android:text="@string/Doc" />
+
             <Spinner
                 android:id="@+id/doctor_spinner"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_toRightOf="@+id/Edoctor"/>
+                android:layout_toRightOf="@+id/Choose_D" />
 
         </LinearLayout>
     </ScrollView>
