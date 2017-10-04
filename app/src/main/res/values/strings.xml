@@ -9,6 +9,7 @@
     <string name="Date">Fecha de cita</string>
     <string name="Date_time">Hora de la cita</string>
     <string name="Doc">Elegir doctor</string>
+    <string name="save">Guardar</string>
 
     <string-array name="Drs">
       <item>"Dr. Nacho"</item>

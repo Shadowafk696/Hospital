@@ -4,12 +4,13 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         textTargetUri = (TextView) findViewById(R.id.targeturi);
         targetImage = (ImageView) findViewById(R.id.Ohnolafoto);
 
-        Spinner spinner = (Spinner)findViewById(R.id.doctor_spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.doctor_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.Drs, R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         });
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
@@ -78,8 +80,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onNothingSelected(AdapterView<?> adapterView) {
         Toast.makeText(this, "selection disappears", Toast.LENGTH_SHORT).show();
     }
+
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+    public void Toast (View v) {
+        EditText Uno = (EditText) findViewById(R.id.Celda_1);
+        EditText Dos = (EditText) findViewById(R.id.Celda_2);
+        EditText Tres = (EditText) findViewById(R.id.Celda_7);
+        EditText Cuatro = (EditText) findViewById(R.id.Celda_8);
+        EditText V = (EditText) findViewById(R.id.Celda_4);
+        EditText VI = (EditText) findViewById(R.id.Celda_3);
+        EditText VII = (EditText) findViewById(R.id.Celda_5);
+        EditText VIII = (EditText) findViewById(R.id.Celda_6);
+        Spinner IX = (Spinner) findViewById(R.id.doctor_spinner);
+        Toast.makeText(MainActivity.this, "Guardado el paciente " + Uno.getText() + " De " + Dos.getText() + " Años de Edad, " + " El Dia " +
+                        Tres.getText() + " A las " + Cuatro.getText() + " Datos de Contacto: Celular:" + V.getText() + " Correo:" + VI.getText() +
+                        " Dirección: " + VII.getText() + " Con el Padecimiento: " + VIII.getText() + " Será atendido por el Doctor: " + IX.getSelectedItem().toString(),
+                Toast.LENGTH_LONG).show();
+
+    }
 }
+
+
+

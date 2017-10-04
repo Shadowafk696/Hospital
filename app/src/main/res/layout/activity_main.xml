@@ -70,7 +70,7 @@
                 android:layout_toRightOf="@+id/CPaciente"
                 android:fontFamily="monospace"
                 android:hint="Ingrese su correo"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress|textWebEmailAddress" />
 
             <TextView
                 android:id="@+id/TPaciente"
@@ -193,7 +193,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@+id/Choose_D" />
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/toast"
+                android:text="@string/save"
+                android:onClick="Toast"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
