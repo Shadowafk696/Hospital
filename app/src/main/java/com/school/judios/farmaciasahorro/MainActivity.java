@@ -96,9 +96,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         EditText VII = (EditText) findViewById(R.id.Celda_5);
         EditText VIII = (EditText) findViewById(R.id.Celda_6);
         Spinner IX = (Spinner) findViewById(R.id.doctor_spinner);
-        Toast.makeText(MainActivity.this, "Guardado el paciente " + Uno.getText() + " De " + Dos.getText() + " Años de Edad, " + " El Dia " +
-                        Tres.getText() + " A las " + Cuatro.getText() + " Datos de Contacto: Celular:" + V.getText() + " Correo:" + VI.getText() +
-                        " Dirección: " + VII.getText() + " Con el Padecimiento: " + VIII.getText() + " Será atendido por el Doctor: " + IX.getSelectedItem().toString(),
+        Toast.makeText(MainActivity.this, "Ell paciente es: " + Uno.getText() + " con " + Dos.getText() + " años de edad. " + " Su cita es el dia " +
+                        Tres.getText() + " a las " + Cuatro.getText() + " Su celular es:" + V.getText() + " con el siguiente correo:" + VI.getText() +
+                        " y dirección: " + VII.getText() + " con un Padecimiento de " + VIII.getText() + " y será atendido por el Doctor: " + IX.getSelectedItem().toString(),
                 Toast.LENGTH_LONG).show();
 
     }
